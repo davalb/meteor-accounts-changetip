@@ -1,10 +1,10 @@
 
 Package.describe({
-  summary: "soundcloud oauth login service for meteor",
+  summary: "changetip oauth login service for meteor",
   name: "davalb:accounts-changetip",
   version: "1.0.1",
-  git: "https://github.com/quietcreep/meteor-accounts-soundcloud.git",
-  author: "gregory nicholas <gregory@unvael.com>; dustin chaffin <dustinchaffin@gmail.com>",
+  git: "https://github.com/davalb/meteor-accounts-changetip.git",
+  author: "gregory nicholas <gregory@unvael.com>; dustin chaffin <dustinchaffin@gmail.com>; David Albrecht <davidalbre@gmail.com>",
 });
 
 Package.on_use(function(api) {
@@ -16,6 +16,6 @@ Package.on_use(function(api) {
   api.use( 'accounts-oauth@1.1.0', both );
   api.use( 'davalb:changetip@0.0.1', both )
 
-  api.add_files( 'soundcloud-login-button.css', both );
-  api.add_files( 'soundcloud.js', both );
+  api.add_files( 'changetip-login-button.css', both );
+  api.add_files( 'changetip.js', both );
 });
